@@ -176,7 +176,7 @@ prediction_proba = clf.predict_proba(df)
 
 
 st.subheader('Prediction')
-penguins_species = np.array(['NO','YES'])
+penguins_species = np.array(['YES','NO'])
 st.write(penguins_species[prediction])
 
 st.subheader('Prediction Probability')
