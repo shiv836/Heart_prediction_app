@@ -7,8 +7,12 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import pickle
-from sklearn.ensemble import RandomForestClassifier
+st.write("Minor project 2021")
+col1, mid, col2 = st.columns([1,1,20])
+with col1:
+    st.image('nit_raipur_logo.jpg', width=60)
+with col2:
+    st.write('NIT Raipur')
 
 st.write("""
 # Heart disease Prediction App
@@ -53,7 +57,7 @@ else:
         elif(cp=="non-anginal pain"):
             cp=3.0
         else:
-            cp=4.0
+            cp=0.0
 
         if(fbs=="Yes"):
             fbs=1.0
